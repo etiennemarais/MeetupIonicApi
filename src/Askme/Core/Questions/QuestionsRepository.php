@@ -19,6 +19,6 @@ class QuestionsRepository extends Repository implements QuestionsRepositoryContr
      */
     public function getAllQuestions()
     {
-        return $this->getAllItems();
+        return $this->builder()->with('answers')->get();
     }
 }

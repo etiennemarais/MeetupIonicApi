@@ -8,4 +8,9 @@ class Answer extends Model
     protected $fillable = [
         'answer',
     ];
+
+    public function question()
+    {
+        return $this->belongsTo('Askme\Domain\Questions\Question', 'question_id');
+    }
 }

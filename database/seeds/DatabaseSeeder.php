@@ -25,15 +25,52 @@ class DatabaseSeeder extends Seeder {
 			));
 		}
 
-		for ($i = 0; $i < 15; $i++) {
+		for ($i = 0; $i < 5; $i++) {
 			$fake = Faker\Factory::create();
 
 			Answer::create(array(
+				'question_id' => 1,
 				'answer' => $fake->realText(20),
 			));
 		}
 
-		for ($i = 0; $i < 15; $i++) {
+		for ($i = 0; $i < 5; $i++) {
+			$fake = Faker\Factory::create();
+
+			Answer::create(array(
+				'question_id' => 2,
+				'answer' => $fake->realText(20),
+			));
+		}
+
+		for ($i = 0; $i < 5; $i++) {
+			$fake = Faker\Factory::create();
+
+			Answer::create(array(
+				'question_id' => 3,
+				'answer' => $fake->realText(20),
+			));
+		}
+
+		for ($i = 0; $i < 5; $i++) {
+			$fake = Faker\Factory::create();
+
+			Answer::create(array(
+				'question_id' => 4,
+				'answer' => $fake->realText(20),
+			));
+		}
+
+		for ($i = 0; $i < 5; $i++) {
+			$fake = Faker\Factory::create();
+
+			Answer::create(array(
+				'question_id' => 5,
+				'answer' => $fake->realText(20),
+			));
+		}
+
+		for ($i = 0; $i < 5; $i++) {
 			$fake = Faker\Factory::create();
 
 			Recommend::create(array(
