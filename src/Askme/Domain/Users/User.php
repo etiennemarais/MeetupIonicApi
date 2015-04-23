@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Askme\Domain\Users;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
