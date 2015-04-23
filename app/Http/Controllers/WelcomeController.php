@@ -34,4 +34,5 @@ class WelcomeController extends ApiController
 			'data' => $questions,
 		]);
 	}
+
 }
