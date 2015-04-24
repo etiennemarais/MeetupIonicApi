@@ -34,7 +34,7 @@ return array(
         ),
         '*' => array(
             'allowedOrigins' => array('*'),
-            'allowedHeaders' => array('Content-Type'),
+            'allowedHeaders' => array('*'),
             'allowedMethods' => array('POST', 'PUT', 'GET', 'DELETE'),
             'maxAge' => 3600,
             'hosts' => array('*'),
