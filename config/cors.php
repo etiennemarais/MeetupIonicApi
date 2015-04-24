@@ -16,13 +16,13 @@ return array(
      |
      */
     'defaults' => array(
-        'supportsCredentials' => false,
+        'supportsCredentials' => true,
         'allowedOrigins' => array('*'),
         'allowedHeaders' => array('*'),
         'allowedMethods' => array('*'),
         'exposedHeaders' => array('*'),
         'maxAge' => 0,
-        'hosts' => array(),
+        'hosts' => array('*'),
     ),
 
     'paths' => array(
@@ -37,7 +37,7 @@ return array(
             'allowedHeaders' => array('Content-Type'),
             'allowedMethods' => array('POST', 'PUT', 'GET', 'DELETE'),
             'maxAge' => 3600,
-            'hosts' => array('api.*'),
+            'hosts' => array('*'),
         ),
     ),
 
