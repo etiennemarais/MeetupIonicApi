@@ -11,6 +11,7 @@ class WelcomeController extends ApiController
 	public function __construct(Response $response)
 	{
 		$this->response = $response;
+		$this->middleware('App\Http\Middleware\Cors');
 	}
 
 	/**
